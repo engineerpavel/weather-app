@@ -8,6 +8,9 @@ import {FooterComponent} from './footer/footer.component';
 import {BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatSelectModule} from '@angular/material/select';
+import {WeatherService} from '../services/weather.service';
+import {WeatherRepository} from '../repositories/weather.repository';
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -20,9 +23,13 @@ import {MatSelectModule} from '@angular/material/select';
     AppRoutingModule,
     BrowserAnimationsModule,
     MatToolbarModule,
-    MatSelectModule
+    MatSelectModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [
+    WeatherService,
+    WeatherRepository
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
