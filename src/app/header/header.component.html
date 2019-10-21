@@ -1,0 +1,17 @@
+<mat-toolbar color="primary" class="header-component">
+  <span>European weather</span>
+
+  <div class="cities-selector">
+    <span class="select-label">Select your city</span>
+    <mat-form-field>
+      <mat-select [(value)]="selectedCity">
+        <mat-option [value]="citiesEnum.AMSTERDAM">Amsterdam</mat-option>
+        <mat-option [value]="citiesEnum.ATHENS">Athens</mat-option>
+        <mat-option [value]="citiesEnum.BERLIN">Berlin</mat-option>
+        <mat-option [value]="citiesEnum.LISBON">Lisbon</mat-option>
+        <mat-option [value]="citiesEnum.UTRECHT">Utrecht</mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+
+</mat-toolbar>

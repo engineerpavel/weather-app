@@ -1,0 +1,7 @@
+export enum CitiesEnum {
+  ATHENS = 'ATHENS',
+  BERLIN = 'BERLIN',
+  LISBON = 'LISBON',
+  AMSTERDAM = 'AMSTERDAM',
+  UTRECHT = 'UTRECHT'
+}
