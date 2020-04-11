@@ -6,5 +6,5 @@ export class WeatherModel {
 }
 
 export class WeatherApiModel {
-  public weather: WeatherModel;
+  public weather: [WeatherModel];
 }
